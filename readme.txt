@@ -20,3 +20,8 @@ xuxuxuxuxux
 	现在你有两个选择，一是确实要从版本库中删除该文件，那就用命令git rm file.name 删掉，并且git commit -m "content"
 	另一种情况是删错了，因为版本库里还有呢，所以可以很轻松地把误删的文件恢复到最新版本：
 		$ git checkout -- test.txt
+
+添加远程库：
+	要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
+	关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+	此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
