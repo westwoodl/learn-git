@@ -1,4 +1,4 @@
-﻿Git is a version control system.
+Git is a version control system.
 Git is free software.hahahahah
 caocaocaocaocaocacoa
 xuxuxuxuxux
@@ -75,3 +75,14 @@ fast forwoard：
 	命令git tag <tagname>用于新建一个标签，默认为HEAD，也可以指定一个commit id；
 	命令git tag -a <tagname> -m "blablabla..."可以指定标签信息；
 	命令git tag可以查看所有标签。
+ 
+ 操作标签：
+ 	命令git push origin <tagname>可以推送一个本地标签；
+	命令git push origin --tags可以推送全部未推送过的本地标签；
+	命令git tag -d <tagname>可以删除一个本地标签；
+	命令git push origin :refs/tags/<tagname>可以删除一个远程标签。
+
+GitHub：
+	在GitHub上，可以任意Fork开源仓库；clone到本地加以修改
+	自己拥有Fork后的仓库的读写权限；
+	可以推送pull request给官方仓库来贡献代码。
